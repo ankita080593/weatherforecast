@@ -26,7 +26,7 @@ class _homeState extends State<home> {
     if (await Permission.location.isGranted) {
       _currentPosition = await Location().getLocation();
       print(_currentPosition);
-
+//test
       setState(() {
         lat=_currentPosition.latitude.toString();
         long=_currentPosition.longitude.toString();
